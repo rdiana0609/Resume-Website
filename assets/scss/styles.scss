@@ -214,7 +214,7 @@ img{
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 260px;
+        width: 130px;
     }
     &__blob{
         fill: var(--first-color);
@@ -313,6 +313,19 @@ img{
     &__ux{
         width: 85%;
     }
+    &__java{
+        width: 70%;
+    }
+    &__python{
+        width: 80%;
+    }
+    &__oop{
+        width: 100%;
+    }
+    &__sql{
+        width: 90%;
+    }
+
     &__img{
         border-radius: .5rem;
     }
