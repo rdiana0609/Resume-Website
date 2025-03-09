@@ -185,7 +185,15 @@ img {
   row-gap: 5rem;
   padding: 4rem 0 5rem;
 }
+.home.bd-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .home__data {
+   width: 55%;
   align-self: center;
 }
 .home__title {
@@ -212,12 +220,12 @@ img {
 .home__social-icon:hover {
   color: var(--first-color);
 }
-.home__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 130px;
+.home__img img {
+    width: 50%;
+    height: auto;
+    max-width: 250px;
 }
+
 .home__blob {
   fill: var(--first-color);
 }
