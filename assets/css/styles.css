@@ -220,10 +220,10 @@ img {
 .home__social-icon:hover {
   color: var(--first-color);
 }
-.home__img img {
-    width: 50%;
-    height: auto;
-    max-width: 250px;
+.home__img {
+    width: 40%; /* Reduce image section width */
+    display: flex;
+    justify-content: center;
 }
 
 .home__blob {
