@@ -186,15 +186,19 @@ img {
   padding: 4rem 0 5rem;
 }
 .home.bd-grid {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px; /* Add some padding on the sides */
+  row-gap: 2rem;
 }
 
 .home__data {
-   width: 55%;
-  align-self: center;
+  width: 50%;  /* Adjust text width */
+  text-align: left;  /* Left-align text to make it more readable */
+  margin-bottom: 0;  
+  margin-top: 10%;/* Remove any unnecessary bottom margin */
 }
 .home__title {
   font-size: var(--big-font-size);
@@ -221,16 +225,43 @@ img {
   color: var(--first-color);
 }
 .home__img {
-    width: 40%; /* Reduce image section width */
-    display: flex;
-    justify-content: center;
+  flex: 1;  /* Allow the image section to take available space */
+  max-width: 500px;  /* Set a max-width for the image */
+  display: flex;
+  justify-content: right;  /* Center the image horizontally */
+  align-items:end;  /* Center the image vertically */
+}
+.home__social {
+  display: flex;
+  align-items: center;  /* Vertically center the buttons */
+  gap: 1.5rem;  /* Adds space between buttons */
 }
 
-.home__blob {
-  fill: var(--first-color);
+/* Image itself */
+.home__img img {
+  max-width: 80%;  /* Ensure the image doesn't overflow */
+  height: auto;
+  margin-top: -10%;
 }
-.home__blob-img {
-  width: 360px;
+
+@media screen and (max-width: 768px) {
+  .home.bd-grid {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .home__data {
+      width: 90%;  /* Increase text width on smaller screens */
+      text-align: center; /* Center-align text */
+      margin-bottom: 1.5rem; /* Add some margin between text and image */
+  }
+
+  .home__img {
+      width: 100%;  /* Adjust image size */
+      margin-top: 2rem;  /* Add some space above the image */
+      bottom: -10%;
+  }
 }
 
 /*BUTTONS*/
@@ -265,6 +296,7 @@ img {
 
 /* ===== SKILLS =====*/
 .skills__container {
+  
   /* row-gap: 2rem;
   text-align: center;
   
