@@ -415,11 +415,24 @@ img {
   width: 350px;
 }
 .work__img img {
+  width: 100%; /* Ensures the image stretches to the container width */
+  height: 100%; /* Ensures the image stretches to the container height */
+  object-fit: cover; 
   transition: 1s;
 }
 .work__img img:hover {
   transform: scale(1.1);
-} */
+} 
+.work__title{
+  font-size: var(--font-semi);
+  font-weight: bold;
+  color: var(--first-color);
+  text-align:left;
+  margin-top: var(--mb-2); /* Space above */
+  margin-bottom: var(--mb-2); 
+
+}
+*/
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
